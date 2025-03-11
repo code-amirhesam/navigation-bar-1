@@ -1,0 +1,39 @@
+@media only screen and (max-width: 701px) {
+    .nav_container {
+        max-width: 10%;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .nav_ul {
+        flex-flow: column wrap;
+        height: 80px;
+        border-radius: 70% 8% 8% 70%;
+        transition: all 650ms;
+    }
+    .nav_ul > :not(#hide) {
+        display: none;
+        opacity: 1;
+    }
+    #hide {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 546px) {
+    .nav_container {
+        max-width: 12%;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    .nav_container {
+        max-width: 15%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .nav_container {
+        max-width: 18%;
+    }
+}
