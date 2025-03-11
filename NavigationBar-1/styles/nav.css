@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Parkinsans";
+    src: url(../fonts/Parkinsans-Regular.ttf), format("truetype");
+}
+
+* {
+    font-family: "Parkinsans";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: url(../images/body.jpg) no-repeat top;
+}
+
+.nav_container {
+    position: relative;
+    z-index: 9;
+    max-width: 100%;
+    padding: 8px;
+    margin: 4px auto;
+}
+
+.nav_ul {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    backdrop-filter: blur(6px);
+    padding: 6px;
+    border-radius: 24px;
+    box-shadow: 0 0 24px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav_li {
+    padding: 6px;
+    font-size: 18px;
+}
+
+.nav_a {
+    text-decoration: none;
+    color: white;
+    transition: all 450ms;
+}
+
+.nav_a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    color: whitesmoke;
+}
+
+.menu {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    color: white;
+    float: right;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 750ms;
+    transform: translateX(2px);
+}
+
+.menu:hover {
+    transform:scale(1.25);
+}
+
+#hide {
+    display: none;
+}
